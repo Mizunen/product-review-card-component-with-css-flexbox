@@ -201,3 +201,9 @@ body{
     }
 }
 
+@media screen and (min-width: 1800px) {
+    .product-review-card{
+        width: 75%;
+        height: 85%;
+    }
+}
