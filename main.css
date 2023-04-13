@@ -8,23 +8,29 @@ html{
 }
 body{
     background-color: hsl(30, 38%, 92%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    margin-left: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 100vw;
+}
+footer{
+    height: 5vh;
 }
 
 .product-review-card{
     display:flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    width: 90%;
-    height: 90%;
+    width: 20rem;
+    height: 38rem;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -101,41 +107,11 @@ body{
     background-color: hsl(158, 37%, 26%);
 }
 
-
-@media screen and (min-width: 768px) {
-    
-    .product-info{
-        height: 100%; 
-        padding: 1.75rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .category{
-        font-size: 1.05rem;
-    }
-    .product-name{
-        font-size: 2.5rem;
-        margin: 1rem 0;
-    }
-
-    .product-description{
-        margin: 0;
-        
-        font-size: 1.5rem;
-    }
-
-    .cart-button{
-        font-size: 1.25rem;
-    }
-}
-
 @media screen and (min-width: 1440px) {
     .product-review-card{
         flex-direction: row;
-        height: 75%;
-        width: 85%;
+        height: 32rem;
+        width: 45rem;
         overflow: hidden;
     }
 
@@ -156,54 +132,47 @@ body{
     .product-info{
         width: 50%;
         height: 100%;
-        padding: 2.5rem;
+        padding: 1rem 2.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
     .category{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 0;
     }
 
     .product-name{
-        font-size: 4.75rem;
+        width: 80%;
+        font-size: 2rem;
         margin: 0;
     }
 
     .product-description{
         margin: 0;
-        font-size: 1.85rem;
+        font-size: 1rem;
     }
 
     .product-price__sale{
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .product-price__normal{
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
 
     .cart-button{
         width: 100%;
-        height: 5rem;
-        padding: 1.5rem;
-        font-size: 1.75rem;
+        height: 3.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
         text-align: center;
         vertical-align: center;
     }
 
     .cart-button img{
-        height: 1.75rem;
-        width: 1.75rem;
-        margin-right: 1rem;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .product-review-card{
-        width: 75%;
-        height: 85%;
+        height: 1rem;
+        width: 1rem;
     }
 }
